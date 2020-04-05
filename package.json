@@ -1,0 +1,36 @@
+{
+  "name": "express-example-starter",
+  "version": "1.0.0",
+  "description": "An Express-based application skeleton",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js localhost 8080"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "csv-parser": "^2.3.2",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "formidable": "^1.2.2",
+    "joi": "^14.3.1",
+    "module-alias": "^2.2.2",
+    "mongodb-memory-server": "^6.5.2",
+    "mongoose": "^5.9.7",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.4"
+  },
+  "keywords": [
+    "expressjs",
+    "express"
+  ],
+  "_moduleAliases": {
+    "@services": "services",
+    "@common": "common",
+    "@data": "data",
+    "@routes": "routes"
+  }
+}

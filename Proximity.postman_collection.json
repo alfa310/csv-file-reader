@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "27e0354e-045c-4110-a50e-78a06a0514aa",
+		"name": "Proximity",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/providers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"POSTMAN\",\n\t\"fieldMatch\": {\n\t\t\"uuid\": \"UUID\",\n\t\t\"vin\": \"VIN\",\n\t\t\"make\": \"Make\",\n\t\t\"model\" : \"Model\",\n\t\t\"mileage\": null,\n\t    \"year\": null,\n\t    \"price\": null,\n\t    \"zipCode\": null,\n\t    \"createDate\": null,\n\t    \"updateDate\": null\n\t}\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/provider",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"provider"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/providers Full",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Full\",\n\t\"fieldMatch\": {\n\t\t\"uuid\": \"UUID\",\n\t\t\"vin\": \"VIN\",\n\t\t\"make\": \"Make\",\n\t\t\"model\" : \"Model\",\n\t\t\"mileage\": \"Mileage\",\n\t    \"year\": \"Year\",\n\t    \"price\": \"Price\",\n\t    \"zipCode\": \"Zip Code\",\n\t    \"createDate\": \"Create Date\",\n\t    \"updateDate\": \"Update Date\"\n\t}\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/provider",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"provider"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/providers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/providers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"providers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/providers?id=5e8a4ceabd934b2d0c04f5d3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Diego2\",\n\t\"fieldMatch\": {\n\t\t\"uUID\": \"BIGID\",\n\t\t\"make\": \"make\",\n\t\t\"model\" : null,\n\t\t\"mileage\": null,\n\t    \"year\": null,\n\t    \"price\": null,\n\t    \"zipCode\": null,\n\t    \"createDate\": null,\n\t    \"updateDate\": null\n\t}\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/providers?id=5e8a4ceabd934b2d0c04f5d3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"providers"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5e8a4ceabd934b2d0c04f5d3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/Diego/Desktop/test.csv"
+						},
+						{
+							"key": "provider",
+							"value": "Full",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/file",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/upload?id=5e8a6136a0bd88376ad508c8",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/file?id=5e8a61b2bb027f37855bb366",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"file"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5e8a61b2bb027f37855bb366"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

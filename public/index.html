@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Express</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+
+  <body>
+    <h1>Proximity Upload CSV: Backend Coding Challenge</h1>
+    <form action="/api/file" enctype="multipart/form-data" method="post">
+      <div>Provider's Name: <input type="text" name="provider" required /></div>
+      <div>CSV File: <input type="file" accept="text/csv" name="file" /></div>
+      <input type="submit" value="Upload" />
+    </form>
+  </body>
+</html>
