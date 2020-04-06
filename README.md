@@ -64,4 +64,4 @@ Tests: I tested this project using Postman requests, I saved the collection i us
 
 In summary, I really loved working on this project, many things could be improved though, like adding unit test for each layer with **jest**, adding logging for each layer, using typescript for a better type definition, adding dependency injection between each layer and having functional (e2e) tests that can be run as part of a pre-commit hook of git. Sadly, I only had time to do this.  Thank you for the challenge.
 
-Diego Berolatti ![Diego](./public/images/VzColors01.png)
+Diego Berolatti <img src="./public/images/VzColors01.png" alt="Diego" style="zoom: 25%;" />
